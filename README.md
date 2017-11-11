@@ -1,2 +1,5 @@
-# aws-codecommit-pull-request-utils
-Utilities and samples for working with CodeCommit pull requests
+CodeCommit Pull Request Utils
+
+## License
+
+This library is licensed under the Apache 2.0 License. 
