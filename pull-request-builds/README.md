@@ -2,13 +2,7 @@ Lambda function that both kicks off a CodeBuild build for a new/updated CodeComm
 
 # Instructions
 
-The default AWS JS SDK installed in the Lambda environment does not yet have the CodeCommit pull request APIs, so this function requires bundling the SDK into the function zip.
-```
-npm install
-zip -r lambda.zip *
-```
-
-Upload the zip to a Lambda function, with `index.handler` for the handler and a Node.js runtime.
+Upload index.js to a Lambda function, with `index.handler` for the handler and a Node.js runtime.
 
 Add a CloudWatch Events trigger for the function, using the rule pattern in `cloudwatch_events_rule_pattern.json`.
 
